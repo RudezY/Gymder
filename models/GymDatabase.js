@@ -23,7 +23,7 @@ Gym.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Gym'
+    modelName: 'gym'
   }
 );
 

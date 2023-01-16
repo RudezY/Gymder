@@ -7,11 +7,15 @@ class UserAttributes extends Model {}
 
 UserAttributes.init(
   {
-    ID: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
+    },
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     zipcode: {
       type: DataTypes.INTEGER,
@@ -21,10 +25,10 @@ UserAttributes.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    gymMembershipId: {
+    gymId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      autoIncrement: true
+      autoIncrement: false
     },
     age: {
       type: DataTypes.INTEGER,
@@ -36,7 +40,7 @@ UserAttributes.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Gym'
+    modelName: 'userattributes'
   }
 );
 
