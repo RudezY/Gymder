@@ -3,9 +3,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config');
 
 // create our User model
-class Post extends Model {}
+class UserAttributes extends Model {}
 
-Post.init(
+UserAttributes.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -17,12 +17,22 @@ Post.init(
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    title: {
+    zipcode: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    workoutstyle: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    body: {
-      type: DataTypes.STRING
+    gymId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: false
+    },
+    age: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   },
   {
@@ -30,8 +40,8 @@ Post.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post'
+    modelName: 'userattributes'
   }
 );
 
-module.exports = Post;
+module.exports = UserAttributes;

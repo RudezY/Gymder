@@ -28,6 +28,11 @@ User.init(
       validate: {
         len: [4]
       }
+    },
+    //added email to user
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
   {
