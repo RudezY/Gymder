@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const GymDataBase = require('../models/');
-const { Post, } = require('../models/Post');
-const { User } = require('../models/User');
+const { Post, User } = require('../models');
 
 // Get all the Gym User Information, and render it to a handlebars template
 //Gets the gymDataBase specifically by the parameters
@@ -20,11 +19,15 @@ router.get('/GymDataBase', async (req, res) => {
 // This calls all of the posts from the database
 router.get('/', async (req, res) => {
   try {
-    const postData = Post.findAll();
+    const postData = await Post.findAll();
+    console.log(postData)
     const posts = postData.map((post) => post.get({ plain: true }));
     //Is rendering into the homepage right now
     res.render('homepage', {posts, username: 'testing'});
-  } catch (err) { /* empty */ }
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
 // Make new JS file for post / user / gymDataBase to be linked to Homepage/Login/Signup
