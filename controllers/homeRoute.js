@@ -5,7 +5,7 @@ const { User } = require('../models/User');
 
 // Get all the Gym User Information, and render it to a handlebars template
 //Gets the gymDataBase specifically by the parameters
-router.get('/GymDataBase:id', async (req, res) => {
+router.get('/GymDataBase', async (req, res) => {
   try {
     const GymDataBaseData = await GymDataBase.findByAll();
     console.log(GymDataBaseData);
@@ -38,3 +38,4 @@ router.get('/User', (req, res) => {
     res.status(500).json(err);
   }
 });
+module.exports = router;

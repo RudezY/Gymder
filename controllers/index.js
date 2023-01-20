@@ -3,8 +3,8 @@
 const router = require('express').Router();
 
 const apiRoutes = require('./api');
-const homeRoutes = require('./homeRoutes.js');
-const dashboardRoutes = require('./dashboardRoutes.js');
+const homeRoutes = require('./homeRoute.js');
+const dashboardRoutes = require('./dashboardRoute.js');
 
 //homeRoutes will have no prefix prepended to all routes
 router.use('/', homeRoutes);
