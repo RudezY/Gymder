@@ -1,298 +1,298 @@
 const { Gym } = require('../models');
 const gymData = [
   {
-    gymMembershipId: 1,
+    Id: 1,
     gym_name: 'La Fitness',
     zipcode: 90631
   },
 
   {
-    gymMembershipId: 2,
+    Id: 2,
     gym_name: 'La Fitness',
     zipcode: 92606
   },
 
   {
-    gymMembershipId: 3,
+    Id: 3,
     gym_name: 'La Fitness',
     zipcode: 92610
   },
   {
-    gymMembershipId: 4,
+    Id: 4,
     gym_name: 'La Fitness',
     zipcode: 92612
   },
   {
-    gymMembershipId: 5,
+    Id: 5,
     gym_name: 'La Fitness',
     zipcode: 92620
   },
   {
-    gymMembershipId: 6,
+    Id: 6,
     gym_name: 'La Fitness',
     zipcode: 92630
   },
   {
-    gymMembershipId: 7,
+    Id: 7,
     gym_name: 'La Fitness',
     zipcode: 92648
   },
   {
-    gymMembershipId: 8,
+    Id: 8,
     gym_name: 'La Fitness',
     zipcode: 92691
   },
   {
-    gymMembershipId: 9,
+    Id: 9,
     gym_name: 'La Fitness',
     zipcode: 92704
   },
   {
-    gymMembershipId: 10,
+    Id: 10,
     gym_name: 'La Fitness',
     zipcode: 92705
   },
   {
-    gymMembershipId: 11,
+    Id: 11,
     gym_name: 'La Fitness',
     zipcode: 92708
   },
   {
-    gymMembershipId: 12,
+    Id: 12,
     gym_name: 'La Fitness',
     zipcode: 92807
   },
   {
-    gymMembershipId: 13,
+    Id: 13,
     gym_name: 'La Fitness',
     zipcode: 92845
   },
   {
-    gymMembershipId: 14,
+    Id: 14,
     gym_name: 'La Fitness',
     zipcode: 92868
   },
   {
-    gymMembershipId: 15,
+    Id: 15,
     gym_name: 'La Fitness',
     zipcode: 92886
   },
   {
-    gymMembershipId: 16,
+    Id: 16,
     gym_name: '24 Hour Fitness',
     zipcode: 90620
   },
   {
-    gymMembershipId: 17,
+    Id: 17,
     gym_name: '24 Hour Fitness',
     zipcode:90720
   },
   {
-    gymMembershipId: 18,
+    Id: 18,
     gym_name: '24 Hour Fitness',
     zipcode:92602
   },
   {
-    gymMembershipId: 19,
+    Id: 19,
     gym_name: '24 Hour Fitness',
     zipcode:92618
   },
   {
-    gymMembershipId: 20,
+    Id: 20,
     gym_name: '24 Hour Fitness',
     zipcode:92626
   },
   {
-    gymMembershipId: 21,
+    Id: 21,
     gym_name: '24 Hour Fitness',
     zipcode:92627
   },
   {
-    gymMembershipId: 22,
+    Id: 22,
     gym_name: '24 Hour Fitness',
     zipcode:92630
   },
   {
-    gymMembershipId: 59,
+    Id: 59,
     gym_name: '24 Hour Fitness',
     zipcode:92646
   },
   {
-    gymMembershipId: 23,
+    Id: 23,
     gym_name: '24 Hour Fitness',
     zipcode:92647
   },
   {
-    gymMembershipId: 24,
+    Id: 24,
     gym_name: '24 Hour Fitness',
     zipcode:92649
   },
   {
-    gymMembershipId: 25,
+    Id: 25,
     gym_name: '24 Hour Fitness',
     zipcode:92675
   },
   {
-    gymMembershipId: 26,
+    Id: 26,
     gym_name: '24 Hour Fitness',
     zipcode:92677
   },
   {
-    gymMembershipId: 27,
+    Id: 27,
     gym_name: '24 Hour Fitness',
     zipcode:92688
   },
   {
-    gymMembershipId: 28,
+    Id: 28,
     gym_name: '24 Hour Fitness',
     zipcode:92691
   },
   {
-    gymMembershipId: 29,
+    Id: 29,
     gym_name: '24 Hour Fitness',
     zipcode:92694
   },
   {
-    gymMembershipId: 30,
+    Id: 30,
     gym_name: '24 Hour Fitness',
     zipcode:92704
   },
   {
-    gymMembershipId: 31,
+    Id: 31,
     gym_name: '24 Hour Fitness',
     zipcode:92705
   },
   {
-    gymMembershipId: 32,
+    Id: 32,
     gym_name: '24 Hour Fitness',
     zipcode:92708
   },
   {
-    gymMembershipId: 33,
+    Id: 33,
     gym_name: '24 Hour Fitness',
     zipcode:92801
   },
   {
-    gymMembershipId: 34,
+    Id: 34,
     gym_name: '24 Hour Fitness',
     zipcode:92808
   },
   {
-    gymMembershipId: 35,
+    Id: 35,
     gym_name: '24 Hour Fitness',
     zipcode:92821
   },
   {
-    gymMembershipId: 36,
+    Id: 36,
     gym_name: '24 Hour Fitness',
     zipcode:92835
   },{
-    gymMembershipId: 37,
+    Id: 37,
     gym_name: '24 Hour Fitness',
     zipcode:92841
   },
   {
-    gymMembershipId: 38,
+    Id: 38,
     gym_name: '24 Hour Fitness',
     zipcode:92865
   },
   {
-    gymMembershipId: 39,
+    Id: 39,
     gym_name: '24 Hour Fitness',
     zipcode:92868
   },
   {
-    gymMembershipId: 40,
+    Id: 40,
     gym_name: '24 Hour Fitness',
     zipcode:92869
   },
   {
-    gymMembershipId: 41,
+    Id: 41,
     gym_name: '24 Hour Fitness',
     zipcode:92886
   },
   {
-    gymMembershipId: 42,
+    Id: 42,
     gym_name: 'EOS',
     zipcode:92694
   },
   {
-    gymMembershipId: 43,
+    Id: 43,
     gym_name: 'EOS',
     zipcode:92705
   },
   {
-    gymMembershipId: 44,
+    Id: 44,
     gym_name: 'Crunch',
     zipcode:92649
   },
   {
-    gymMembershipId: 45,
+    Id: 45,
     gym_name: 'Crunch',
     zipcode:92708
   },
   {
-    gymMembershipId: 46,
+    Id: 46,
     gym_name: 'Crunch',
     zipcode:92804
   },
   {
-    gymMembershipId: 47,
+    Id: 47,
     gym_name: 'Golds',
     zipcode:92804
   },
   {
-    gymMembershipId: 48,
+    Id: 48,
     gym_name: 'Planet Fitness',
     zipcode:90621
   },
   {
-    gymMembershipId: 49,
+    Id: 49,
     gym_name: 'Planet Fitness',
     zipcode:90680
   },
   {
-    gymMembershipId: 50,
+    Id: 50,
     gym_name: 'Planet Fitness',
     zipcode:92627
   },
   {
-    gymMembershipId: 51,
+    Id: 51,
     gym_name: 'Planet Fitness',
     zipcode:92630
   },
   {
-    gymMembershipId: 52,
+    Id: 52,
     gym_name: 'Planet Fitness',
     zipcode:92648
   },
   {
-    gymMembershipId: 53,
+    Id: 53,
     gym_name: 'Planet Fitness',
     zipcode:92677
   },
   {
-    gymMembershipId: 54,
+    Id: 54,
     gym_name: 'Planet Fitness',
     zipcode:92705
   },
   {
-    gymMembershipId: 55,
+    Id: 55,
     gym_name: 'Planet Fitness',
     zipcode:92706
   },
   {
-    gymMembershipId: 56,
+    Id: 56,
     gym_name: 'Planet Fitness',
     zipcode:92708
   },
   {
-    gymMembershipId: 57,
+    Id: 57,
     gym_name: 'Planet Fitness',
     zipcode:92782
   },
   {
-    gymMembershipId: 58,
+    Id: 58,
     gym_name: 'Planet Fitness',
     zipcode:92802
   }
