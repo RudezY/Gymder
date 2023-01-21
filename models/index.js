@@ -1,4 +1,4 @@
-const Gym = require('./GymDatabase');
+const Gym = require('./Gym');
 const User = require('./User');
 const Post = require('./Post');
 const UserAttributes = require('./UserAttributes');

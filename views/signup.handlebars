@@ -1,12 +1,17 @@
 <h2>Sign Up</h2>
 <form id='signup-form' class='card-body'>
-  <div>
-    <label for='username-input-signup'>Username</label>
-    <input type='text' id='username-input-signup' />
+    <div>
+    <label for='email-signup'>Email</label>
+    <input type='text' id='email-signup' autocomplete="email" />
   </div>
   <div>
-    <label for='password-input-signup'>Password</label>
-    <input type='password' id='password-input-signup' />
+    <label for='username-signup'>Username</label>
+    <input type='text' id='username-signup' autocomplete="username"/>
+  </div>
+
+  <div>
+    <label for='password-signup'>Password</label>
+    <input type='password' id='password-signup' autocomplete="current-password" />
   </div>
   <button type='submit'>Signup!</button>
   <a href='/login'>Login instead</a>

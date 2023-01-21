@@ -16,6 +16,10 @@ Gym.init(
     zipcode: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    gym_name: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
   {
