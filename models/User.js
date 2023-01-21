@@ -33,11 +33,6 @@ User.init(
         len: [4]
       }
     },
-    //added email to user
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false
-    }
   },
   {
     hooks: {
