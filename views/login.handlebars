@@ -32,6 +32,14 @@ body {
   margin: 0;
 }
 
+header {
+  margin-top: 4%;
+   font-family: "Arial Black", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  color: white;
+}
+
 input {
   border: none;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -53,7 +61,7 @@ after { clear: both; }
 }
 
 #login form {
-  margin: auto;
+  margin-bottom: 10%;
   padding: 22px 22px 22px 22px;
   width: 100%;
   border-radius: 5px;
@@ -110,32 +118,38 @@ after { clear: both; }
   background: #16aa56;
 }
 </style>
-{{! Unstyled Login View boilerplate is completed for you }}
 
-
-{{!-- 
-<form id="login-form" class="card-body">
-  <div>
-    <label for="username-input-login">Username</label>
-    <input type="text" id="username-input-login" />
-  </div>
-  <div>
-    <label for="password-input-login" class="form-label">Password</label>
-    <input type="password" id="password-input-login" />
-  </div>
-  <button type="submit">Login!</button>
-  <a type="button" href="/signup">Sign up instead</a>
-</form> --}}
 {{!-- <html lang="en-US">
 <head>
   <meta charset="utf-8">
     <title>Login</title>
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"> --}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
-{{!-- </head> --}}
+</head>
+<div class="jumbotron vertical-center"></div>
+  <div class="container">
+     <h1 class="display-4">Gymder</h1>
     <div id="login">
       <form name='form-login'>
+        {{!-- <span class="fontawesome-user"></span>
+          <input type="text" id="email-input-login" placeholder="Email"> --}}
+<h1>LOGIN</h1>
+        <span class="fontawesome-user"></span>
+        
+          <input type="text" id="username-input-login" placeholder="Username">
+       
+        <span class="fontawesome-lock"></span>
+          <input type="password" id="password-input-login" placeholder="Password">
+        
+        <input type="submit" value="Submit">
+
+        {{!-- <input type="submit" value="Signup"> --}}
+
+</form>
+
+    <form name='form-login'>
+      <h1>SIGNUP</h1>
         <span class="fontawesome-user"></span>
           <input type="text" id="email-input-login" placeholder="Email">
 
@@ -145,10 +159,10 @@ after { clear: both; }
         <span class="fontawesome-lock"></span>
           <input type="password" id="password-input-login" placeholder="Password">
         
-        <input type="submit" value="Submit">
+        {{!-- <input type="submit" value="Submit"> --}}
 
         <input type="submit" value="Signup">
 
 </form>
 
-<script src="/js/login.js"></script> --}}
+<script src="/js/login.js"></script> --}} --}}
