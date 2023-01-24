@@ -2,11 +2,11 @@
 
 <h2 style="margin-left:50rem;">My Posts</h2>
 <div class="col-md-8">
-{{#each posts }}
+{{#each post }}
 <form method="POST" action="api/post/delete/{{id}}">
     <button type="submit">DELETE</button>
 </form>
-</form>
-{{>posts this }}
+
+{{>post this }}
 {{/each}}
 </div>

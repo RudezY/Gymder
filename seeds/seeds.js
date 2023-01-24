@@ -3,7 +3,7 @@ const gymData = [
   {
     Id: 1,
     gym_name: 'La Fitness',
-    zipcode: 90631
+    zipcode: 90631,
   },
 
   {
