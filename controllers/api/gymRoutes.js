@@ -5,14 +5,13 @@ const withAuth = require('../../utils/auth');
 
 router.get('/:id', withAuth, async (req, res) => {
   try {
-    const userPost = await Post.findAll({
-      where: { id: req.params.id},
+    const allPost = await Post.findAll({
+
       include: {
         model : User,
-        attributes: ['username']
       }
     });
-    const post = userPost.map((post) => post.get({ plain: true }));
+    const post = allPost.map((post) => post.get({ plain: true }));
     console.log('POSTEY', post);
     res.render('single-gym-post', { posts: post, id: req.params.id });
   } catch (err) {
