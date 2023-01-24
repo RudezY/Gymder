@@ -1,33 +1,38 @@
-<form name="new-post" id="new-post">
-    <input type="text" name="title" id="title" />
-    <textarea name="body" id="body" cols="30" rows="10"></textarea>
-    <button type="submit" id="submit">Create Post</button>
-</form>
-<script>
-    document.querySelector('#new-post').addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const response = await fetch('/gym/:id/create', {
-           method: 'POST',
-           headers: {
-            'Content-Type': 'application/json',
-           },
-           body: JSON.stringify({
-            title: document.querySelector('#title').value,
-            body: document.querySelector('#body').value
-           })
-        })
-
-         if (response.ok) {
-            document.location.replace('/dashboard');
-          } else {
-            alert('Failed to create post');
-          }
-        })
-</script>
 <section class="card-section">
     <div class="posts">
-        {{#each post}}
-        {{post this}}
+        {{#each posts}}
+        {{>post this}}
         {{/each}}
     </div>
 </section>
+<form name="new-post" id="new-post" method="POST">
+  <p>Title</p>
+    <input type="text" name="title" id="title" />
+    <input type="hidden" name="gymId" value="{{id}}" />
+    <br>
+    <p>Please add information such as age, gender of wanted partner, workout type, muscle group and time.</p>
+    <textarea name="body" id="body" cols="30" rows="10"></textarea>
+    <br>
+    <button type="submit" id="submit">Create Post</button>
+</form>
+{{!-- <script> --}}
+    {{!-- document.querySelector('#new-post').addEventListener("submit", async (event) => { --}}
+        {{!-- event.preventDefault(); --}}
+        {{!-- const response = await fetch('/gym/:id/create', { --}}
+           {{!-- method: 'POST', --}}
+           {{!-- headers: { --}}
+            {{!-- 'Content-Type': 'application/json', --}}
+           {{!-- }, --}}
+           {{!-- body: JSON.stringify({ --}}
+            {{!-- title: document.querySelector('#title').value, --}}
+            {{!-- body: document.querySelector('#body').value --}}
+           {{!-- }) --}}
+        {{!-- }) --}}
+
+         {{!-- if (response.ok) { --}}
+            {{!-- document.location.replace('/gym/:id'); --}}
+          {{!-- } else { --}}
+            {{!-- alert('Failed to create post'); --}}
+          {{!-- } --}}
+        {{!-- }) --}}
+{{!-- </script> --}}

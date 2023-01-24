@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, UserAttributes, User } = require('../../models/');
+const { Post, User } = require('../../models/');
 const withAuth = require('../../utils/auth');
 
 
@@ -7,31 +7,36 @@ router.get('/:id', withAuth, async (req, res) => {
   try {
     const userPost = await Post.findAll({
       where: { id: req.params.id},
-      order : [['created_at', 'DESC']],
       include: {
-        model : Post, UserAttributes, User,
+        model : User,
         attributes: ['username']
       }
     });
     const post = userPost.map((post) => post.get({ plain: true }));
-    console.log(post);
-    res.render('single-gym-post', { layout: 'dashboard', post});
+    console.log('POSTEY', post);
+    res.render('single-gym-post', { posts: post, id: req.params.id });
   } catch (err) {
-    res.redirect('/login');
+    console.log('MAYBE', err),
+    res.status(500).json(err);
   }
 });
-router.get('/:id/create', withAuth, async (req, res) => {
-  res.redirect('admin-create-post', {layout: 'dashboard',});
-});
+// router.get('/:id/create', withAuth, async (req, res) => {
+//   res.redirect('admin-create-post', {layout: 'dashboard',});
+// });
 
-router.post('/:id/create', withAuth, async (req, res) => {
+router.post('/:id', withAuth, async (req, res) => {
+  const body = req.body;
+  console.log(body);
+  console.log(req.session);
   try{
-    await Post.create({
-      title: req.body.title,
-      body: req.body.body,
-      userId: req.session.userId
-    });
-    res.redirect('/dashboard');
+    const submitpost = await Post.create(
+      {
+        userId : req.session.userId,
+        title: body.title,
+        body: body.body
+      });
+    console.log('here is the post', submitpost);
+    res.redirect(`/api/gym/${body.gymId}`);
   }catch(err){
     res.status(500).json(err);
   }
