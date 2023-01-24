@@ -26,7 +26,7 @@
 }
 
 body {
-  background: #2c3338;
+  {{!-- background: #2c3338; --}}
   color: #606468;
   font: 87.5%/1.5em 'Open Sans', sans-serif;
   margin: 0;
@@ -58,6 +58,7 @@ after { clear: both; }
 #login {
   margin: 50px auto;
   width: 320px;
+  
 }
 
 #login form {
@@ -121,15 +122,19 @@ after { clear: both; }
 
 <html lang="en-US">
 <head>
+  
   <meta charset="utf-8">
     <title>Login</title>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
 </head>
+ <header>
+      <h1><a href='/'>Welcome to Gymder</a></h1>
+    </header>
 <div class="jumbotron vertical-center"></div>
   <div class="container">
-     <h1 class="display-4">Gymder</h1>
+     
     <div id="login">
       <form name='form-login' id="login-form">
 <h1>LOGIN</h1>
