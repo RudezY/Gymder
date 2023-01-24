@@ -8,6 +8,7 @@ const withAuth = require('../utils/auth');
 // It should display all of the posts created by the logged in user
 router.get('/', withAuth, async (req, res) => {
   const postsData = await Post.findAll({
+
     where: { userId: req.session.userId },
     include: [
       {
@@ -31,7 +32,7 @@ router.post('/create', withAuth, async (req, res) => {
     await Post.create({
       title: req.body.title,
       body: req.body.body,
-      userId: req.session.userId,
+      username: req.session.username,
     });
 
     res.status(200).json({ message: 'Post created successfully'});
