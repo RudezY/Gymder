@@ -1,4 +1,4 @@
-<h2>Login</h2>
+{{!-- <h2>Login</h2>
 
 <form id='login-form' class='card-body'>
   <div>
@@ -14,9 +14,9 @@
   <a type='button' href='/signup'>Sign up instead</a>
 </form>
 
-<script src='/js/login.js'></script>
+<script src='/js/login.js'></script> --}}
 
-{{!-- <style>
+<style>
   
   @charset "utf-8";
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
@@ -119,7 +119,7 @@ after { clear: both; }
 }
 </style>
 
-{{!-- <html lang="en-US">
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
     <title>Login</title>
@@ -131,9 +131,7 @@ after { clear: both; }
   <div class="container">
      <h1 class="display-4">Gymder</h1>
     <div id="login">
-      <form name='form-login'>
-        {{!-- <span class="fontawesome-user"></span>
-          <input type="text" id="email-input-login" placeholder="Email"> --}}
+      <form name='form-login' id="login-form">
 <h1>LOGIN</h1>
         <span class="fontawesome-user"></span>
         
@@ -142,27 +140,25 @@ after { clear: both; }
         <span class="fontawesome-lock"></span>
           <input type="password" id="password-input-login" placeholder="Password">
         
-        <input type="submit" value="Submit">
+        <input type="submit" id="login-form" value="Submit">
 
-        {{!-- <input type="submit" value="Signup"> --}}
 
 </form>
 
-    <form name='form-login'>
+    <form name='form-login' id="signup-form">
       <h1>SIGNUP</h1>
         <span class="fontawesome-user"></span>
-          <input type="text" id="email-input-login" placeholder="Email">
+          <input type="text" id="email-input-signup" placeholder="Email">
 
         <span class="fontawesome-user"></span>
-          <input type="text" id="username-input-login" placeholder="Username">
+          <input type="text" id="username-input-signup" placeholder="Username">
        
         <span class="fontawesome-lock"></span>
-          <input type="password" id="password-input-login" placeholder="Password">
+          <input type="password" id="password-input-signup" placeholder="Password">
         
-        {{!-- <input type="submit" value="Submit"> --}}
-
-        <input type="submit" value="Signup">
+        <input type="submit" id="signup-form" value="Submit">
 
 </form>
 
-<script src="/js/login.js"></script> --}} --}}
+<script src="/js/login.js"></script>
+<script src ='/js/signup.js'></script>

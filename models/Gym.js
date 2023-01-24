@@ -7,16 +7,16 @@ class Gym extends Model {}
 
 Gym.init(
   {
-    Id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    zipcode: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
+    // zipcode: {
+    //   type: DataTypes.ARRAY,
+    //   allowNull: false
+    // },
     gym_name: {
       type: DataTypes.STRING,
       allowNull: false
