@@ -1,21 +1,18 @@
-
 a {
-    color: black;
+  color: white;
 }
 
-header h1 a{
-  
-    color: #fff;
-    text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    
+header h1 a {
+  color: #fff;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 body {
-
-    background-image: url("../images/gymflex.jpg");
-    background-color: #cccccc;
-    text-shadow: 5px;
-  }
+  background-image: url('../images/gym1.jpg');
+  background-color: #cccccc;
+  text-shadow: 5px;
+  color: white;
+}
 /* 
 
     body {
@@ -28,4 +25,14 @@ body {
         
     } */
 
+nav {
+  color: white;
+}
 
+.container {
+  color: white;
+}
+
+#title {
+  color: white;
+}
