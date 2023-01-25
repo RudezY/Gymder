@@ -6,7 +6,9 @@ const withAuth = require('../../utils/auth');
 router.get('/:id', withAuth, async (req, res) => {
   try {
     const allPost = await Post.findAll({
-
+      where: {
+        gym_id: req.params.id
+      },
       include: {
         model : User,
       }
@@ -32,7 +34,8 @@ router.post('/:id', withAuth, async (req, res) => {
       {
         userId : req.session.userId,
         title: body.title,
-        body: body.body
+        body: body.body,
+        gym_id: req.params.id
       });
     console.log('here is the post', submitpost);
     res.redirect(`/api/gym/${body.gymId}`);

@@ -9,7 +9,7 @@
     "lint": "npx eslint **/*.js",
     "lint:fix": "npx eslint **/*.js --fix",
     "format": "npx prettier **/* -w --ignore-unknown",
-    "seed":"node seeds/index.js"
+    "seed": "node seeds/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -20,6 +20,7 @@
     "express-handlebars-hotreload": "^0.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.0.1",
+    "nodemailer": "^6.9.0",
     "sequelize": "^6.28.0"
   },
   "devDependencies": {

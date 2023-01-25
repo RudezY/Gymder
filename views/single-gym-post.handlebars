@@ -1,7 +1,9 @@
 <section class="card-section">
     <div class="posts">
-        {{#each posts}}
+        {{#each posts as |post|}}
         {{>post this}}
+        {{!-- {{#each post.comments}}
+        {{/each}} --}}
         {{/each}}
     </div>
 </section>
