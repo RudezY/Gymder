@@ -1,0 +1,15 @@
+a {
+  color: white;
+}
+
+header h1 a {
+  color: #fff;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+nav {
+  color: white;
+}
+
+.container {
+  color: white;
+}

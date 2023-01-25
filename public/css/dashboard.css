@@ -1,0 +1,12 @@
+nav ul {
+  position: fixed;
+  color: white;
+}
+
+body {
+  padding-top: 100px;
+  background-image: url('../images/gym2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
