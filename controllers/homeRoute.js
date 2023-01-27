@@ -5,19 +5,24 @@ const withAuth = require('../utils/auth');
 //Gets the gymDataBase specifically by the parameters
 router.get('/', withAuth, async (req, res) => {
   try {
-    const gymData = await Gym.findAll({
-    });
+    const gymData = await Gym.findAll({});
     console.log(gymData);
-    const gyms = gymData.map((gym) => gym.get({ plain : true }));
+    const gyms = gymData.map((gym) => {
+      //need to parse the zip array string before consuming
+      const data = gym.get({ plain: true });
+      return {
+        ...data,
+        zipcode: JSON.parse(data.zipcode)
+      };
+    });
     res.render('homepage', {
-      gyms,
+      gyms
     });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
-
 
 // The below is for the postRoute that is linked to the homepage - need to find out which file it specifically belongs to
 // This calls all of the posts from the database
@@ -27,7 +32,7 @@ router.get('/', async (req, res) => {
     console.log(postData);
     const posts = postData.map((post) => post.get({ plain: true }));
     //Is rendering into the homepage right now
-    res.render('homepage', {posts, username: 'testing'});
+    res.render('homepage', { posts, username: 'testing' });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -44,8 +49,6 @@ router.get('/login', (req, res) => {
   //render the login view otherwise, refer to login.handlebars
   res.render('login');
 });
-
-
 
 // This route renders the signup page, which has been completed for you
 router.get('/signup', (req, res) => {

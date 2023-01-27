@@ -1,4 +1,4 @@
-const seedGyms = require('./seeds2.js');
+const seedGyms = require('./seeds.js');
 
 const sequelize = require('../config/index');
 

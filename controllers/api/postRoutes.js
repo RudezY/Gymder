@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post } = require('../../models/');
 const withAuth = require('../../utils/auth');
 // do I want to pass some data or render a page <- Nick's comment
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const postData = Post.findAll();
     const posts = postData.map((Post) => Post.get({ plain: true }));

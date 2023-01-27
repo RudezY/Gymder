@@ -9,7 +9,8 @@
     "lint": "npx eslint **/*.js",
     "lint:fix": "npx eslint **/*.js --fix",
     "format": "npx prettier **/* -w --ignore-unknown",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "heroku-postbuild": "npm run seed"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
