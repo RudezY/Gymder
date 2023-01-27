@@ -33,6 +33,10 @@ UserAttributes.init(
     age: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    gender : {
+      type : DataTypes.STRING,
+      allowNull: true,
     }
   },
   {

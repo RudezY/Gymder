@@ -11,12 +11,12 @@ header h1 a {
   text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-body {
+/* body {
   background-image: url('../images/gym1.jpg');
   background-color: #cccccc;
   text-shadow: 5px;
   color: white;
-}
+} */
 /* 
 
     body {
@@ -31,6 +31,8 @@ body {
 
 nav {
   color: white;
+  position: absolute;
+  z-index: 11;
 }
 
 .container {
@@ -41,3 +43,50 @@ input #title {
   
   color: black !important;;
 } */
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+/* set `#slideshow` parent background color */
+.slideshow {
+  background: #000;
+  display:block;
+  width:inherit;
+  height:inherit;
+}
+
+main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}
+#slideshow {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.0;
+  background-color: #000;
+  z-index: 1;
+  /* 
+     set background images as `url(/path/to/image)` here, 
+     separated by commas 
+  */
+  background-image: url("https://media1.popsugar-assets.com/files/thumbor/Lo4MuDQscEznKajWhHTliRFLx9k/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/11/10/736/n/1922729/ba5b788c5a05d68ed93342.81157167_edit_img_cover_file_44242623_1510275897/i/Inspirational-Fitness-Quotes.jpg"), 
+    url("https://i.pinimg.com/564x/63/62/95/636295db735a0a523c4154dd2ecf8e10.jpg");
+    /* url("http://lorempixel.com/400/400/nature/?3"), 
+    url("http://lorempixel.com/400/400/technics/?4"), 
+    url("http://lorempixel.com/400/400/city/?5"); */
+  background-size: cover, 0px, 0px, 0px;
+/* set transtitions at 3000ms 
+  -webkit-transition: background-image 3000ms linear;
+  -moz-transition: background-image 3000ms linear;
+  -ms-transition: background-image 3000ms linear;
+  -o-transition: background-image 3000ms linear;
+  transition: background-image 3000ms linear;
+    */
+}
+
