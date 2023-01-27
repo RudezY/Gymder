@@ -9,6 +9,7 @@ router.get('/:id', withAuth, async (req, res) => {
       where: {
         gym_id: req.params.id
       },
+      order: [['createdAt']],
       include: {
         model : User,
       }

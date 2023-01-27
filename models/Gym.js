@@ -13,10 +13,10 @@ Gym.init(
       primaryKey: true,
       autoIncrement: true
     },
-    // zipcode: {
-    //   type: DataTypes.ARRAY,
-    //   allowNull: false
-    // },
+    zipcode: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
     gym_name: {
       type: DataTypes.STRING,
       allowNull: false
