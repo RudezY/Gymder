@@ -2,8 +2,9 @@ nav {
   position: fixed;
   color: white;
   text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  display: flex;
-  justify-content: space-between;
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
 }
 
 body {
