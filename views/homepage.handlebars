@@ -1,11 +1,10 @@
 
 
 <nav>
-      <ul>
-        <li><a href="/">Gyms</a></li>
-        <li><a href="/dashboard">Dashboard</a></li>
-        <li><a href="#" id="logout-link">Logout</a></li>
-      </ul>
+      <a href="/">Gyms</a>
+      <a href="/dashboard">Dashboard</a>
+      <a href="#" id="logout-link">Logout</a>
+
     </nav>
     <br/>
     <br/>
@@ -20,7 +19,7 @@
 
 <div class="container">
     <div class = "row">
-        <div class="card col-md-1">
+        <div class="card col-md-1" style="display:flex; gap: 10px;">
         {{#each gyms }}
         {{>gyms this}}
         {{/each }}
