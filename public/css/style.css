@@ -1,18 +1,31 @@
 a {
   color: white;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin: 10;
+  padding: 10;
 }
 
 h2 {
   color: white;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin: 10;
+  padding: 10;
 }
 
 h1 {
   color: white;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin: 10;
+  padding: 10;
 }
 
 header h1 a {
   color: #fff;
   text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin: 10;
+  padding: 10;
+  display: flex;
+  justify-content: center;
 }
 
 /* body {
@@ -37,6 +50,10 @@ nav {
   color: white;
   position: absolute;
   z-index: 11;
+
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
 }
 
 .container {
@@ -51,6 +68,9 @@ input #title {
 body {
   width: 100vw;
   height: 100vh;
+
+  margin: 10;
+  padding: 10;
 }
 /* set `#slideshow` parent background color */
 .slideshow {
@@ -66,6 +86,8 @@ main {
   width: 100%;
   background: transparent;
   z-index: 10;
+  margin: 10;
+  padding: 10;
 }
 #slideshow {
   position: absolute;
@@ -79,8 +101,10 @@ main {
      set background images as `url(/path/to/image)` here, 
      separated by commas 
   */
-  background-image: url('https://media1.popsugar-assets.com/files/thumbor/Lo4MuDQscEznKajWhHTliRFLx9k/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/11/10/736/n/1922729/ba5b788c5a05d68ed93342.81157167_edit_img_cover_file_44242623_1510275897/i/Inspirational-Fitness-Quotes.jpg'),
-    url('https://i.pinimg.com/564x/63/62/95/636295db735a0a523c4154dd2ecf8e10.jpg');
+  background-image: url('../images/exercise7.jpg'),
+    url('../images/exercise2.jpg'), url('../images/exercise3.jpg'),
+    url('../images/exercise4.jpg'), url('../images/exercise5.jpg'),
+    url('../images/exercise6.jpg');
   /* url("http://lorempixel.com/400/400/nature/?3"), 
     url("http://lorempixel.com/400/400/technics/?4"), 
     url("http://lorempixel.com/400/400/city/?5"); */
