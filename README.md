@@ -4,7 +4,8 @@ Project 2
 # Description 
 With this project we wanted to create an application for users that don't have a consistent gym partner or at least give users the ability to find a new gym partner in their local area. The users are brought to a login page where they are presented the options to log into their account or to sign up for one. After signing up or signing in, the user is then given several zipcodes [Or they would input a zipcode/Gym] and gym to which the user will then be given a variety of other matching partners to choose from. 
 
-#Deployed Site: 
+#Deployed Heroku Site: 
+https://gymder-project.herokuapp.com/login
 
 [Upload Image of Homepage] 
 
