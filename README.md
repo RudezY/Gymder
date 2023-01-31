@@ -11,13 +11,16 @@ With this project we wanted to create an application for users that don't have a
 #Usage: 
 
 1. The user is brought to a sign in page where they can choose to login to an account they've made or to sign up for one 
-[Upload Pictures of Sign in / Homepage / Zipcode(Cities) / Gyms & Written Instructions] 
+![gymder_Login](https://user-images.githubusercontent.com/113906981/215643389-298d114c-2bfc-42a0-820f-2795a56d2c5f.PNG)
 
-2. Here is the homepage where the user can select (or type in a zipcode) that directs them to a city that is linked to that ID 
+2. Here is the homepage where the user will brought to after signing up / logging in and where they can select to go to gyms/dashboards/logout
+![gymder_HomePage](https://user-images.githubusercontent.com/113906981/215643445-6314729a-cfc5-4b04-ab01-f993d22d5a2b.PNG)
 
-3. After selecting their city, the user is brought into another page where they will select a gym of their choice. 
+3. Select a gym of your choice
+![Gymder_Gyms](https://user-images.githubusercontent.com/113906981/215643631-2b36a7e8-3262-4417-b8ad-ad5a5bdf1d9f.PNG)
 
-4. A page will populate with other users that match the original users parameters. 
+4. A page will populate where the user can input their information for the app with an example provided
+![Gymder_Post](https://user-images.githubusercontent.com/113906981/215643684-b3ae8695-7cf0-4845-9eae-1515915885b6.PNG)
 
 
 #Credits: 
